@@ -11,19 +11,22 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="KLASA - revolutionary e-learning platform for fully supported, active and self-paced learning">
-	<div class="isolate bg-white">
-		<div class="bg-gradient-to-b from-blue-200 via-blue-100 to-white">
-			<TopNav />
-			<Hero />
+	<div class="bg-white">
+		<!-- <div class="bg-gradient-to-b from-blue-200 via-blue-100 to-white"> -->
+		<div class="isolate bg-[url('/images/hero__pattern.svg')] bg-top bg-cover bg-no-repeat">
+			<div class="bg-gradient-to-t from-white to-transparent">
+				<TopNav />
+				<Hero />
+				<ProductIntro />
+			</div>
 		</div>
 		<main>
-			<ProductIntro />
 			<ProductExplanation />
 			<ProductStats />
 			<ProductTestimonials />
 			<ContactCta />
 		</main>
-		<footer class="bg-white">
+		<footer>
 			<Footer />
 		</footer>
 	</div>
