@@ -1,8 +1,92 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
+
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		colors: {
+			...colors,
+			black: '#0F0E26',
+			blue: {
+				50: '#E3F0FF',
+				100: '#B4D9FF',
+				200: '#82BBFF',
+				300: '#5D9EF6',
+				400: '#3E85F4',
+				500: '#1964F1',
+				600: '#004AD7',
+				700: '#0040BC',
+				800: '#0037A2',
+				900: '#00256D',
+			},
+			gray: {
+				50: '#F7F7F9',
+				100: '#F1F2F6',
+				200: '#E5E7ED',
+				300: '#C6CBD7',
+				400: '#A8AFC0',
+				500: '#8992A7',
+				600: '#767F95',
+				700: '#636C84',
+				800: '#4A5269',
+				900: '#2B3045',
+			},
+			teal: {
+				50: '#E6FBF9',
+				100: '#B3F4EE',
+				200: '#81EBE3',
+				300: '#4FE3D8',
+				400: '#03D6C8',
+				500: '#03C9BC',
+				600: '#03BCB0',
+				700: '#02ABA0',
+				800: '#02968C',
+				900: '#02726D',
+			},
+			indigo: {
+				50: '#E6E9FF',
+				100: '#CDD4FF',
+				200: '#A5B5FD',
+				300: '#869AFD',
+				400: '#727DFB',
+				500: '#6663FB',
+				600: '#5652DD',
+				700: '#4A47C4',
+				800: '#3C399F',
+				900: '#29266B',
+			},
+			yellow: {
+				50: '#FFF4E2',
+				100: '#FFEAC5',
+				200: '#FFD690',
+				300: '#FBC358',
+				400: '#F4AF29',
+				500: '#EF9B15',
+				600: '#E68D09',
+				700: '#C97B0F',
+				800: '#9D6213',
+				900: '#865314',
+			},
+			yellow: {
+				50: '#FDE7E7',
+				100: '#FDD0D0',
+				200: '#FCB8B7',
+				300: '#FD9C9C',
+				400: '#FB7F7F',
+				500: '#F46161',
+				600: '#DD504E',
+				700: '#C53E3B',
+				800: '#AA2B29',
+				900: '#8E1515',
+			},
+		},
+		extend: {
+			fontFamily: {
+				sans: ['Lato', ...defaultTheme.fontFamily.sans],
+			},
+		},
 	},
 	plugins: [],
-}
+};
