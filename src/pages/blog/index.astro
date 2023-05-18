@@ -7,14 +7,14 @@ import PageHeader from '../../components/layout/PageHeader.astro';
 const allPosts = await Astro.glob('./*.md');
 
 const og = {
-	title: 'Blog',
+	title: 'Blog - Fresh insights from KLASA.io',
 	description:
 		'Dive into the world of atomic content, contextual discussions and maximum learning effectivness',
 	image: 'https://klasa.io/images/klasa_io_atomic_content.png',
 };
 ---
 
-<Layout title="Blog" og={og}>
+<Layout title="Blog - Klasa - Learning experience platform" og={og}>
 	<div class="flex flex-col">
 		<PageHeader><h1 class="text-center font-black text-4xl mb-12">Blog</h1></PageHeader>
 		<Section>
