@@ -1,6 +1,6 @@
 # KLASA.io
 
-Repository for the klasa.io website. [KLASA](https://klasa.io) is a revolutionary platform for fully supported, active and self‑paced e‑learning.
+Repository for the klasa.io website. [KLASA](https://klasa.io) is a revolutionary platform for fully supported, active and self‑paced e‑learning. Hosted @ Netlify.
 
 ## 🧞 Commands
 
