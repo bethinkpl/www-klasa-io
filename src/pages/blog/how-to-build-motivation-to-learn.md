@@ -143,7 +143,7 @@ Designing a productive study area
 
 Choosing the right study environment is crucial to success. Consider your needs and preferences, as your usual workspace may not always be conducive to learning. Create a study area that meets your requirements and supports your motivation. Keep it organized and free of distractions, with educational materials readily accessible.
 
-Feedback
+_Feedback_
 
 If you have such opportunities, try to get feedback. Gathering feedback can boost motivation and validate progress. Seek input from teachers, mentors, or peers to ensure you are on the right track and to receive positive reinforcement for your efforts.
 
