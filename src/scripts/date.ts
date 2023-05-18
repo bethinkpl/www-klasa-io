@@ -1,3 +1,5 @@
+import { format } from 'date-fns';
+
 export function formatDate(date: string) {
-	return new Date(date).toDateString();
+	return format(new Date(date), 'MMM d, yyyy');
 }

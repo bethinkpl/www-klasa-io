@@ -1,5 +1,6 @@
 ---
 layout: ../../layouts/BlogPost.astro
+categories: 'Education, Myths'
 title: 'Is it true that we use only 10% of our brain?'
 summary: 'For an extended period, there has been a popular belief that human beings only utilize a meager 10% of their cognitive potential. This unfounded belief has been debunked by scientific research, and its perpetuation can hinder productivity and growth.'
 mainImage: 'https://images.unsplash.com/photo-1617791160536-598cf32026fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80'

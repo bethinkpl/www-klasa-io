@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Section from '../../components/layout/Section.astro';
+import ContainerNarrow from '../../components/layout/ContainerNarrow.astro';
 import BlogPostCard from '../../components/blog/BlogPostCard.astro';
 import PageHeader from '../../components/layout/PageHeader.astro';
 
@@ -17,7 +17,7 @@ const og = {
 <Layout title="Blog - Klasa - Learning experience platform" og={og}>
 	<div class="flex flex-col">
 		<PageHeader><h1 class="text-center font-black text-4xl mb-12">Blog</h1></PageHeader>
-		<Section>
+		<ContainerNarrow>
 			{
 				allPosts
 					.sort(
@@ -27,6 +27,6 @@ const og = {
 					)
 					.map((post) => <BlogPostCard url={post.url} data={post.frontmatter} />)
 			}
-		</Section>
+		</ContainerNarrow>
 	</div>
 </Layout>

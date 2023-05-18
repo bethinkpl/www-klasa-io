@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/BlogPost.astro
+categories: 'Education, Psychology'
 title: 'How to build motivation to learn?'
 summary: 'In recent times, we have had the opportunity to engage with individuals who have encountered learning difficulties. The reasons behind such challenges can be traced to various factors such as limited knowledge on effective learning techniques, undefined learning objectives, and studying subjects that we are not passionate about.'
 mainImage: 'https://plus.unsplash.com/premium_photo-1681248156477-9d00c17bd594?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80'
 authorName: 'Dariusz Chrapek'
 authorTitle: 'MD, CEO @ Bethink and Klasa.io'
 authorAvatarUrl: 'https://ca.slack-edge.com/T30B12T1B-U30UP3YS3-209cc647cc5f-512'
-publishedAt: '2023-05-15'
+publishedAt: '2023-05-05'
 ---
 
 #1 What is the reason for using the term "build" instead of "have"?

@@ -1,8 +1,9 @@
-<div class="flex h-96 w-full relative items-center justify-center">
-	<div
-		class="absolute top-0 h-full w-full isolate bg-[url('/images/hero__pattern.svg')] bg-top bg-cover bg-no-repeat -z-10"
-	>
-		<div class="bg-gradient-to-t from-white to-transparent"></div>
+<!-- <div class="flex h-72 w-full relative items-center justify-center"> -->
+<div class="isolate bg-[url('/images/hero__pattern.svg')] bg-top bg-cover bg-no-repeat">
+	<div class="bg-gradient-to-t from-white to-transparent">
+		<div class="mt-16 lg:mt-24 h-80 flex items-center justify-center">
+			<slot />
+		</div>
 	</div>
-	<slot />
 </div>
+<!-- </div> -->
