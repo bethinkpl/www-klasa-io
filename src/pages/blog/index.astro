@@ -5,9 +5,16 @@ import BlogPostCard from '../../components/blog/BlogPostCard.astro';
 import PageHeader from '../../components/layout/PageHeader.astro';
 
 const allPosts = await Astro.glob('./*.md');
+
+const og = {
+	title: 'Blog',
+	description:
+		'Dive into the world of atomic content, contextual discussions and maximum learning effectivness',
+	image: '',
+};
 ---
 
-<Layout title="Blog">
+<Layout title="Blog" og={og}>
 	<div class="flex flex-col">
 		<PageHeader><h1 class="text-center font-black text-4xl mb-12">Blog</h1></PageHeader>
 		<Section>

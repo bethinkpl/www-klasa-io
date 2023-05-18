@@ -5,9 +5,9 @@ import { formatDate } from '../scripts/date';
 const { frontmatter } = Astro.props;
 
 const og = {
-	title: frontmatter.title,
-	description: frontmatter.summary,
-	image: frontmatter.mainImage,
+	title: frontmatter.title || '',
+	description: frontmatter.summary || '',
+	image: frontmatter.mainImage || '',
 };
 ---
 
