@@ -6,12 +6,19 @@ import ProductFeatures from '../components/ProductFeatures.astro';
 import ProductExplanation from '../components/ProductExplanation.astro';
 import ProductStats from '../components/ProductStats.astro';
 import ProductTestimonials from '../components/ProductTestimonials.astro';
-import ContactCta from '../components/ContactCta.astro';
-import Footer from '../components/Footer.astro';
+
+const title = 'KLASA - a revolutionary learning experience platform';
+const og = {
+	title,
+	description:
+		'Dive into the world of atomic content, contextual discussions and maximum learning effectivness',
+	image: '',
+};
 ---
 
 <Layout
 	title="KLASA - revolutionary e-learning platform for fully supported, active and self-paced learning"
+	og={og}
 >
 	<div class="bg-white flex-1">
 		<!-- <div class="bg-gradient-to-b from-blue-200 via-blue-100 to-white"> -->

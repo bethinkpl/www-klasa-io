@@ -3,9 +3,15 @@ import Layout from './Layout.astro';
 import { formatDate } from '../scripts/date';
 
 const { frontmatter } = Astro.props;
+
+const og = {
+	title: frontmatter.title,
+	description: frontmatter.summary,
+	image: frontmatter.mainImage,
+};
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={frontmatter.title} og={og}>
 	<div class="flex mt-16 lg:mt-24">
 		<div
 			class="h-[400px] w-full absolute t-0 -z-10 bg-center"
