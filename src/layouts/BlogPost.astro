@@ -1,0 +1,47 @@
+---
+import Layout from './Layout.astro';
+import { formatDate } from '../scripts/date';
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={frontmatter.title}>
+	<div class="flex mt-16 lg:mt-24">
+		<div
+			class="h-[400px] w-full absolute t-0 -z-10 bg-center"
+			style={`background-image: url('${frontmatter.mainImage}')`}
+		>
+			<!-- <img class="absolute -z-10 max-h-48" src="" alt={frontmatter.title}> -->
+		</div>
+		<div class="flex justify-between px-0 lg:px-4 mx-auto max-w-screen-xl mt-[300px]">
+			<article
+				class="bg-white pt-8 px-6 lg:px-16 rounded mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue prose lg:prose-xl"
+			>
+				<header class="mb-4 lg:mb-6 not-format">
+					<address class="flex items-center mb-6 not-italic">
+						<div class="inline-flex items-center mr-3 text-sm text-gray-900">
+							<img
+								class="mr-4 w-16 h-16 rounded-full"
+								src={frontmatter.authorAvatarUrl}
+								alt={frontmatter.authorName}
+							/>
+							<div class="not-prose">
+								<p class="text-xl font-bold text-gray-900"></p>
+								<p class="text-base font-light text-gray-500">
+									{frontmatter.authorName}, {frontmatter.authorTitle}
+								</p>
+								<p class="text-base font-light text-gray-500">
+									<time datetime={formatDate(frontmatter.publishedAt)}
+										>{formatDate(frontmatter.publishedAt)}</time
+									>
+								</p>
+							</div>
+						</div>
+					</address>
+					<h1>{frontmatter.title}</h1>
+				</header>
+				<slot />
+			</article>
+		</div>
+	</div>
+</Layout>

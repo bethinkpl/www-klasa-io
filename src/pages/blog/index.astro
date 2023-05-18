@@ -1,0 +1,25 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/layout/Section.astro';
+import BlogPostCard from '../../components/blog/BlogPostCard.astro';
+import PageHeader from '../../components/layout/PageHeader.astro';
+
+const allPosts = await Astro.glob('./*.md');
+---
+
+<Layout title="Blog">
+	<div class="flex flex-col">
+		<PageHeader><h1 class="text-center font-black text-4xl mb-12">Blog</h1></PageHeader>
+		<Section>
+			{
+				allPosts
+					.sort(
+						(a, b) =>
+							new Date(b.frontmatter.publishedAt).getTime() -
+							new Date(a.frontmatter.publishedAt).getTime()
+					)
+					.map((post) => <BlogPostCard url={post.url} data={post.frontmatter} />)
+			}
+		</Section>
+	</div>
+</Layout>
