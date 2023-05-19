@@ -24,19 +24,7 @@ const { url, data } = Astro.props;
 				<h1 class="text-3xl font-black">{data.title}</h1>
 			</div>
 			<p>{data.summary}</p>
-			<div class="flex items-center justify-between text-gray-600 text-sm">
-				<div class="flex items-center">
-					<img
-						src={data.authorAvatarUrl}
-						alt={data.authorName}
-						class="w-8 h-8 rounded-full"
-					/>
-					<span class="ml-2">{data.authorName}</span>
-				</div>
-				<span>
-					<time>{formatDate(data.publishedAt)}</time>
-				</span>
-			</div>
+			<p class="text-gray-600">Read more &raquo;</p>
 		</div>
 	</div>
 </a>

@@ -1,22 +1,25 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import ContainerNarrow from '../../components/layout/ContainerNarrow.astro';
-import BlogPostCard from '../../components/blog/BlogPostCard.astro';
+import CaseStudyCard from '../../components/case-studies/CaseStudyCard.astro';
 import PageHeader from '../../components/layout/PageHeader.astro';
 
 const allPosts = await Astro.glob('./*.md');
 
 const og = {
-	title: 'Blog - Fresh insights from KLASA.io',
+	title: 'Case studies - See how KLASA distrupted different domains',
 	description:
-		'Dive into the world of atomic content, contextual discussions and maximum learning effectivness',
+		'From high school education, to practical courses for medical graduates - KLASA is at heart of some of the most innovative e-learning projects.',
 	image: 'https://klasa.io/images/klasa_io_atomic_content.png',
 };
 ---
 
-<Layout title="Blog - KLASA - Learning experience platform" og={og}>
+<Layout title="Case studies - KLASA - Learning experience platform" og={og}>
 	<div class="flex flex-col">
-		<PageHeader title="Blog" subtitle="Fresh insights from our team" />
+		<PageHeader
+			title="Case studies"
+			subtitle="See how KLASA disrupted different domains"
+		/>
 		<ContainerNarrow>
 			{
 				allPosts
@@ -25,7 +28,7 @@ const og = {
 							new Date(b.frontmatter.publishedAt).getTime() -
 							new Date(a.frontmatter.publishedAt).getTime()
 					)
-					.map((post) => <BlogPostCard url={post.url} data={post.frontmatter} />)
+					.map((post) => <CaseStudyCard url={post.url} data={post.frontmatter} />)
 			}
 		</ContainerNarrow>
 	</div>
