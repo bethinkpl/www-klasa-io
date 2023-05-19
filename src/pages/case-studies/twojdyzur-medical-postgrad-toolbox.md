@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-categories: 'Medicine, Higher and postgrad education'
-title: 'Więcej niż LEK - revolution in medical education in Poland'
+categories: 'Medicine, Postgrad education'
+title: 'Twój Dyżur - impacting emergency rooms across the country'
 summary: 'In recent times, we have had the opportunity to engage with individuals who have encountered learning difficulties. The reasons behind such challenges can be traced to various factors such as limited knowledge on effective learning techniques, undefined learning objectives, and studying subjects that we are not passionate about.'
-mainImage: 'https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1782&q=80'
-projectName: 'Więcej niż LEK'
-projectUrl: 'https://wnl.pl'
-projectLogoUrl: 'https://scontent.fpoz5-1.fna.fbcdn.net/v/t31.18172-8/13698105_1107804775978173_1102900890592321698_o.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zNKNUVHHXeQAX8kv6-l&_nc_ht=scontent.fpoz5-1.fna&oh=00_AfD2UXtW7NjPEjLRVKYwASVyGnQ6fWluFAFJjj3vCylgVg&oe=648ED72E'
+mainImage: 'https://images.unsplash.com/photo-1615461066841-6116e61058f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1883&q=80'
+projectName: 'Twój Dyżur'
+projectUrl: 'https://twojdyzur.pl'
+projectLogoUrl: 'https://twojdyzur.pl/wp-content/uploads/2019/07/td-mark-red-rgb.png'
 publishedAt: '2023-05-05'
 ---
 

@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-categories: 'Medicine, Higher and postgrad education'
-title: 'Więcej niż LEK - revolution in medical education in Poland'
+categories: 'High school education, Biology and chemistry'
+title: 'Więcej niż Matura - Final exam assistance 7 days a week'
 summary: 'In recent times, we have had the opportunity to engage with individuals who have encountered learning difficulties. The reasons behind such challenges can be traced to various factors such as limited knowledge on effective learning techniques, undefined learning objectives, and studying subjects that we are not passionate about.'
-mainImage: 'https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1782&q=80'
-projectName: 'Więcej niż LEK'
-projectUrl: 'https://wnl.pl'
-projectLogoUrl: 'https://scontent.fpoz5-1.fna.fbcdn.net/v/t31.18172-8/13698105_1107804775978173_1102900890592321698_o.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zNKNUVHHXeQAX8kv6-l&_nc_ht=scontent.fpoz5-1.fna&oh=00_AfD2UXtW7NjPEjLRVKYwASVyGnQ6fWluFAFJjj3vCylgVg&oe=648ED72E'
+mainImage: 'https://images.unsplash.com/photo-1460518451285-97b6aa326961?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80'
+projectName: 'Więcej niż Matura'
+projectUrl: 'https://wiecejnizmatura.pl'
+projectLogoUrl: 'https://scontent.fpoz5-1.fna.fbcdn.net/v/t39.30808-6/292719819_132314806153651_917304929544811831_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=tPYj2wXLy90AX9kdtvg&_nc_ht=scontent.fpoz5-1.fna&oh=00_AfDQsXBxBKqhAehrg0VLXgIh2FLdT3MPd79zAJWRDxDKjA&oe=646B5D93'
 publishedAt: '2023-05-05'
 ---
 
