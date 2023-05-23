@@ -1,10 +1,11 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import ContainerNarrow from '../../components/layout/ContainerNarrow.astro';
 import BlogPostCard from '../../components/blog/BlogPostCard.astro';
+import ContainerNarrow from '../../components/layout/ContainerNarrow.astro';
 import PageHeader from '../../components/layout/PageHeader.astro';
+import Layout from '../../layouts/Layout.astro';
 
 const allPosts = await Astro.glob('./*.md');
+const nonDraft = allPosts.filter(post => !post.frontmatter.draft);
 
 const og = {
 	title: 'Blog - Fresh insights from KLASA.io',
@@ -19,7 +20,7 @@ const og = {
 		<PageHeader title="Blog" subtitle="Fresh insights from our team" />
 		<ContainerNarrow>
 			{
-				allPosts
+				nonDraft
 					.sort(
 						(a, b) =>
 							new Date(b.frontmatter.publishedAt).getTime() -

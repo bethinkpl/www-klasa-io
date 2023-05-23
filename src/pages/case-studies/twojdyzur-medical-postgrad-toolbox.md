@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../layouts/CaseStudy.astro
 categories: 'Medicine, Postgrad education'
 title: 'Twój Dyżur - impacting emergency rooms across the country'

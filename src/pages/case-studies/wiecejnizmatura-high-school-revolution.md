@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../layouts/CaseStudy.astro
 categories: 'High school education, Biology and chemistry'
 title: 'Więcej niż Matura - Final exam assistance 7 days a week'

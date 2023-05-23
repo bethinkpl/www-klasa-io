@@ -1,4 +1,5 @@
 ---
+draft: true
 layout: ../../layouts/BlogPost.astro
 categories: 'Education, Psychology'
 title: 'How to build motivation to learn?'
