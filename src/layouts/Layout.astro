@@ -3,9 +3,9 @@ import '@fontsource/lato/400.css';
 import '@fontsource/lato/700.css';
 import '@fontsource/lato/900.css';
 
-import TopNav from '../components/TopNav.astro';
-import Footer from '../components/Footer.astro';
 import ContactCta from '../components/ContactCta.astro';
+import Footer from '../components/Footer.astro';
+import TopNav from '../components/nav/TopNav.vue';
 
 export interface Props {
 	title: string;
@@ -32,7 +32,7 @@ const { title, og } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="font-sans">
-		<TopNav />
+		<TopNav client:only="vue"/>
 		<slot />
 		<footer class="bg-slate-50 mt-24">
 			<ContactCta />
