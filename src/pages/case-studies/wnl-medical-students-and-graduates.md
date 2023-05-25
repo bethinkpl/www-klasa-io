@@ -1,9 +1,10 @@
 ---
 layout: ../../layouts/CaseStudy.astro
-categories: 'Medicine, Higher and postgrad education'
-title: 'Więcej niż LEK - revolution in medical education in Poland'
+categories: 'Medicine, Higher and postgrad ed'
+title: '"Kurs do LEK" - how the revolution started'
 summary: 'In recent times, we have had the opportunity to engage with individuals who have encountered learning difficulties. The reasons behind such challenges can be traced to various factors such as limited knowledge on effective learning techniques, undefined learning objectives, and studying subjects that we are not passionate about.'
-mainImage: 'https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1782&q=80'
+mainImage: 'https://res.cloudinary.com/bethink/image/upload/v1685043049/Wolno_Several_young_medical_students_learning_together_in_a_spa_328fd193-69d0-46e4-a1a8-3914f16b12a4_pv9zly.png'
+socialImage: 'https://res.cloudinary.com/bethink/image/upload/v1685043764/CASE_STUDY_LEK_LINKIMAGE_qidybz.png'
 projectName: 'Więcej niż LEK'
 projectUrl: 'https://wnl.pl'
 projectLogoUrl: 'https://scontent.fpoz5-1.fna.fbcdn.net/v/t31.18172-8/13698105_1107804775978173_1102900890592321698_o.png?_nc_cat=105&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=zNKNUVHHXeQAX8kv6-l&_nc_ht=scontent.fpoz5-1.fna&oh=00_AfD2UXtW7NjPEjLRVKYwASVyGnQ6fWluFAFJjj3vCylgVg&oe=648ED72E'

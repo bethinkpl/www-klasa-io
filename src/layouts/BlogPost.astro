@@ -16,13 +16,13 @@ const url = encodeURIComponent(new URL(`${Astro.site}${requestUrl.pathname}`).to
 ---
 
 <Layout title={frontmatter.title} og={og}>
-	<div class="flex mt-16 lg:mt-24">
+	<div class="flex">
 		<div
-			class="h-[400px] w-full absolute t-0 -z-10 bg-center bg-cover"
+			class="h-[460px] pt-16 lg:pt-24 w-full absolute t-0 -z-10 bg-center bg-cover"
 			style={`background-image: url('${frontmatter.mainImage}')`}
 		>
 		</div>
-		<div class="flex justify-between px-0 lg:px-4 mx-auto max-w-screen-xl mt-[300px]">
+		<div class="flex justify-between px-0 lg:px-4 mx-auto max-w-screen-xl mt-[365px]">
 			<article
 				class="bg-white pt-8 px-6 lg:px-16 rounded mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue prose lg:prose-xl"
 			>

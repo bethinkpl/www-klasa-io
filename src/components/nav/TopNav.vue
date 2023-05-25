@@ -1,5 +1,5 @@
 <template>
-	<header class="fixed top-0 left-0 w-full z-10 bg-white bg-opacity-50 backdrop-blur-md">
+	<header class="fixed top-0 left-0 w-full z-10 bg-white bg-opacity-70 backdrop-blur-md">
 		<nav
 			class="mx-auto flex max-w-7xl items-center justify-between p-4 lg:p-6 lg:px-8"
 			aria-label="Global"
