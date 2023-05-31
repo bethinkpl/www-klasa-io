@@ -1,0 +1,55 @@
+---
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+
+const og = {
+	title: frontmatter.title || '',
+	description: frontmatter.summary || '',
+	image: frontmatter.socialImage || frontmatter.mainImage || '',
+};
+---
+
+<Layout title={frontmatter.title} og={og}>
+	<div class="flex">
+		<div
+			class="h-[460px] w-full absolute t-0 -z-10 bg-center bg-cover"
+			style={`background-image: url('${frontmatter.mainImage}')`}
+		>
+			<!-- <img class="absolute -z-10 max-h-48" src="" alt={frontmatter.title}> -->
+		</div>
+		<div class="flex justify-between px-0 lg:px-4 mx-auto max-w-screen-xl mt-[365px]">
+			<article
+				class="bg-white pt-8 px-6 lg:px-16 rounded mx-auto w-full max-w-3xl format format-sm sm:format-base lg:format-lg format-blue prose lg:prose-xl"
+			>
+				<header class="mb-4 lg:mb-6 not-format">
+					<div class="flex justify-between items-center">
+						{
+							frontmatter.projectName &&
+							frontmatter.projectLogoUrl &&
+							frontmatter.projectUrl ? (
+								<div class="flex items-center text-gray-600 text-sm">
+									<img
+										src={frontmatter.projectLogoUrl}
+										alt={frontmatter.projectName}
+										class="w-16 h-16 rounded-full border border-slate-100"
+									/>
+									<a href={frontmatter.projectUrl} class="ml-2 text-gray-600 hover:text-blue-600 no-underline" target="_blank">{frontmatter.projectName}</p>
+								</div>
+							) : (
+								''
+							)
+						}
+						<div>
+							<p class="text-sm uppercase text-gray-600">
+								{frontmatter.categories}
+							</p>
+						</div>
+					</div>
+					<h1>{frontmatter.title}</h1>
+				</header>
+				<slot />
+			</article>
+		</div>
+	</div>
+</Layout>

@@ -1,0 +1,33 @@
+---
+import BlogPostCard from '../../components/blog/BlogPostCard.astro';
+import ContainerNarrow from '../../components/layout/ContainerNarrow.astro';
+import PageHeader from '../../components/layout/PageHeader.astro';
+import Layout from '../../layouts/Layout.astro';
+
+const allPosts = await Astro.glob('./*.md');
+const nonDraft = allPosts.filter(post => !post.frontmatter.draft);
+
+const og = {
+	title: 'Blog - Fresh insights from KLASA.io',
+	description:
+		'Dive into the world of atomic content, contextual discussions and maximum learning effectivness',
+	image: 'https://klasa.io/images/klasa_io_atomic_content.png',
+};
+---
+
+<Layout title="Blog - KLASA - Learning experience platform" og={og}>
+	<div class="flex flex-col">
+		<PageHeader title="Blog" subtitle="Fresh insights from our team" />
+		<ContainerNarrow>
+			{
+				nonDraft
+					.sort(
+						(a, b) =>
+							new Date(b.frontmatter.publishedAt).getTime() -
+							new Date(a.frontmatter.publishedAt).getTime()
+					)
+					.map((post) => <BlogPostCard url={post.url} data={post.frontmatter} />)
+			}
+		</ContainerNarrow>
+	</div>
+</Layout>

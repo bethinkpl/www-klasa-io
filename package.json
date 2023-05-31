@@ -11,9 +11,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^2.1.2",
+    "@astrojs/tailwind": "^3.1.2",
+    "@astrojs/vue": "^2.2.0",
     "@fontsource/lato": "^4.5.10",
-    "astro": "^1.6.9",
-    "tailwindcss": "^3.0.24"
+    "@headlessui/vue": "^1.7.13",
+    "@heroicons/vue": "^2.0.18",
+    "@tailwindcss/typography": "^0.5.9",
+    "astro": "^2.5.4",
+    "date-fns": "^2.30.0",
+    "tailwindcss": "^3.3.2",
+    "vue": "^3.2.30"
   }
 }

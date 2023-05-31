@@ -1,0 +1,19 @@
+---
+export interface Props {
+	title: string;
+	subtitle?: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+
+<div class="isolate bg-[url('/images/hero__pattern.svg')] bg-top bg-cover bg-no-repeat">
+	<div class="bg-gradient-to-t from-white to-transparent">
+		<div class="mt-16 lg:mt-24 h-36 md:h-48 lg:h-64 flex flex-col items-center justify-center">
+			<div>
+				<h1 class="text-center font-black text-2xl lg:text-4xl mb-4">{title}</h1>
+				{subtitle ? <p>{subtitle}</p> : ''}
+			</div>
+		</div>
+	</div>
+</div>
